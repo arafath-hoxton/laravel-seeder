@@ -19,6 +19,7 @@ use Illuminate\Support\ServiceProvider;
 
 class SeederServiceProvider extends ServiceProvider
 {
+    const STUB_PATH = __DIR__.'/stubs';
     const SEEDERS_CONFIG_PATH = __DIR__ . '/../../config/seeders.php';
 
     /**
@@ -90,7 +91,7 @@ class SeederServiceProvider extends ServiceProvider
         });
 
         $this->app->singleton(SeederMigrationCreator::class, function ($app) {
-            return new SeederMigrationCreator($app['files']);
+            return new SeederMigrationCreator($app['files'], __DIR__ . '/stubs');
         });
     }
 
