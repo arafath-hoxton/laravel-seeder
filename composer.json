@@ -1,5 +1,5 @@
 {
-  "name": "eighty8/laravel-seeder",
+  "name": "arafath-hoxton/laravel-seeder",
   "description": "Versioned, environment-based Seeders in Laravel",
   "keywords": [
     "data",
@@ -17,7 +17,7 @@
   "type": "library",
   "license": "MIT",
   "require": {
-    "php": ">=7.1.0",
+    "php": ">=8.2",
     "illuminate/support": "^7.0",
     "illuminate/console": "^7.0",
     "illuminate/database": "^7.0",
