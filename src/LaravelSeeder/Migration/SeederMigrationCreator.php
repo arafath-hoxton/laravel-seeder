@@ -62,22 +62,6 @@ class SeederMigrationCreator extends MigrationCreator
     }
 
     /**
-     * Populate the place-holders in the migration stub.
-     *
-     * @param string $name
-     * @param string $stub
-     * @param string $table
-     *
-     * @return string
-     */
-    protected function populateStub($name, $stub, $table): string
-    {
-        $stub = str_replace('{{class}}', $this->getClassName($name), $stub);
-
-        return $stub;
-    }
-
-    /**
      * Get the migration stub file.
      *
      * @param string $table
